@@ -48,8 +48,7 @@
      receiverElem.postMessage(data, "https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?as=internal&embed=iframe&domainCode=pncdemo")
      }
     window.addEventListener('message', receiveMessage);
-    </script>
-    <script>
+    
         function openChatOverlay (receiverElem, imgElemOpen, imgElemClose) {
         document.getElementById('receiver').classList.add("open");
         document.getElementById('receiver').classList.remove("close");
