@@ -14,8 +14,8 @@
         <p>Your browser does not support iframes.</p>
       </iframe>
       <div class="chat-overlay-header">
-        <img class="chat-overlay-header-img close" src="/close.png" alt="toggle chat overlay" />
-        <img class="chat-overlay-header-img open" src="/icon.png" alt="toggle chat overlay" />
+        <img class="chat-overlay-header-img close" src="/jamsellem/close.png" alt="toggle chat overlay" />
+        <img class="chat-overlay-header-img open" src="/jamsellem/icon.png" alt="toggle chat overlay" />
       </div>
   </div>
 </div>
