@@ -12,7 +12,7 @@
         <div class="chat-overlay-header-mobile">
         <img class="close" src="./close.png" alt="toggle chat overlay" />
     </div>
-    <iframe id="receiver" src="https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?embed=iframe&domainCode=pncdemo">
+    <iframe id="receiver" src="https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?as=internal&embed=iframe&domainCode=pncdemo">
         <p>Your browser does not support iframes.</p>
     </iframe>
         <div class="chat-overlay-header">
@@ -32,7 +32,7 @@
      // Check to make sure that this message came from the correct domain.
     
      var url = e.data.url;
-     if (e.origin !== 'https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?embed=iframe&domainCode=pncdemo')
+     if (e.origin !== 'https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?as=internal&embed=iframe&domainCode=pncdemo')
      return;
      if (e.data.action === "checkout" && e.data.additionalData) {
      window.location.href = "/checkout/?additionalData="+ e.data.additionalData;
@@ -45,7 +45,7 @@
      * @returns - no return
      */
      var receiverElem = document.getElementById('receiver').contentWindow;
-     receiverElem.postMessage(data, "https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?embed=iframe&domainCode=pncdemo")
+     receiverElem.postMessage(data, "https://amelia.ipsoft.com/Amelia/ui/PNCdemo/?as=internal&embed=iframe&domainCode=pncdemo")
      }
     window.addEventListener('message', receiveMessage);
     </script>
